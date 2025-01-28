@@ -1,0 +1,37 @@
+Please create simple browser game with following specfications:
+* All needed files will be served from single directory. Linked URL's are not absolute.
+* Game starts with screen displaying the rules:
+   this is chicken vs crocodiles game
+   during your turn you can: 
+   * place egg into empty cell
+   * evolve egg into a chicken
+   Computer takes his turn after your turn.
+   * computer takes random legal action during his turn
+* under the rules "start game" button starts the game when pressed
+* After the game ends, player can reset the board and start new game
+* all corner cases and exceptions are caught. debugging error is displayed when game is in unknown state and option to reset to initial state is available.
+
+Rules of the game are following:
+* player plays "team chicken"
+* computer plays "team crocodile".
+* computer takes random legal action during his turn.
+* Game starts with empty 3x3 grid
+* Players take turns. When players turn is over, turn goes to opponent
+*  during his turn player can take one of following actions:
+1) place egg in any free cell
+  * if all cells are empty or contain chickens/crocodiles - this is the only legal turn player can take.
+2a) evolve egg into chicken (for team chicken)
+2b) evolve egg into crocodile (for team crocodile)
+* player clicks on a cell to take his turn.
+* after picking a cell, corresponding action is taken and turn goes to his opponent.
+* if player clicks on empty cell - egg is placed in the cell and it's opponents turn
+* if player clicks on a cell with egg in it - the egg is involved to chicken and it's opponents turn
+* if player achieves 1 row, 1 column or 1 diagonal filled with his creatures - he is a winner
+* after players turn is finished, there is 1 second delay before computers turn.
+* computer plays random legal action
+* if computer clicks on empty cell - egg is placed in the cell and it's opponents turn
+* if computer clicks on a cell with egg in it - the egg is evolved to crocodile and it's opponent turn
+* if computer achieves 1 row, 1 column or 1 diagonal filled with his creatures - he is a winner
+* If one player wins or all cells contain chicken and crocodiles - no more turns are allowed
+
+Please answer with file names and code.
